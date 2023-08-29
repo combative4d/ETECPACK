@@ -1,0 +1,17 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Oswald&display=swap');
+
+
+.Liga{
+
+  font-family: 'Climate Crisis', cursive;
+font-family: 'Oswald', sans-serif;
+color: brown;
+}
+
+.card:hover{
+
+  
+  box-shadow: 0 3px 15px  rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJ | Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="borda text-center">
+            <h2>Cadastro de Aluno | PJ</h2>
+            <h3>Dados Pessoais</h3>
+    </div>
+    <div class="borda">
+    <div class="row">
+        <div class="col-sm-5 p-2">
+            <div class="form-group">
+              <label for="Name">Nome</label>
+              <input type="text" name="" id="Name" class="form-control" placeholder="Digite seu nome" aria-describedby="helpId" requird/>            
+            </div>      
+            </div>
+
+            <div class="col-sm-5 p-2">
+                <div class="form-group">
+                    <label for="Snome">Sobrenome</label>
+                    <input type="text" class="form-control" id="Snome" nome="snome" placeholder="Digite seu Sobrenome" required/>
+                </div>
+            </div>
+            <div class="col-sm-2 p-2">
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" class="form-control" id="idade" nome="idade" placeholder="Digite sua Idade">
+             </div>
+          </div>
+      </div><!--Fim da primeira row do formulário-->
+      <div class="row">
+        <div class="col-sm-5 p-2">
+            <div class="form-group">
+            <label for="dtnasc">Data de Nascimento</label>
+            <input type="date" id="dtnasc" name="dtnasc" class="form-control" required/>
+            </div>
+            </div>
+            <div class="col-sm-5 p-2">
+                <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="number"id="cpf"
+                name="cpf" class="form-control" placeholder="000.000.000-00" requied/>
+            </div>
+            </div>
+            <div class="col-sm-2 p-2">
+                <div class="form-group">
+                <label for="sexo">Sexo</label><br>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" name="feminino" checked/><br>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="masculino">
+            </div>
+   </div>
+</div>
+</div><!--Fim da Segunda row e da Primeira caixa do formulário-->
+
+<div class="borda">
+<div class="row">
+    <div class="col sm-5 p-2">
+        <div class="form-group">
+            <label for="Rua">Rua</label>
+            <input type="text" id="Rua" class="form-control" required/>
+</div>
+</div>
+<div class="col-sm-5 p-2">
+    <div class="form-group">
+        <label for="Comp">Complemento</label>
+        <input type="text" id="Comp" class="form-control">
+</div>
+</div>
+<div class="col-sm-2 p-2">
+    <div class="form-group">
+        <label for="Num">Número</label>
+        <input type="text" id="Num" class="form-control" required/>
+    </div>
+</div>
+</div><!--Fim da primeira row-->
+
+<div class="row">
+    <div class="col sm-6 p-2">
+        <div class="form-group">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" class="form-control" required/>
+        </div>
+    </div>
+    <div class="col sm-5 p-2">
+        <div class="form-group">
+          <label for="cidade">cidade</label>
+          <input type="text" id="cidade" class="form-control" required/>
+          </div>
+          </div>
+         
+    <div class="col sm-1 p-2">
+        <div class="form-group">
+            <label for="UF">UF</label>
+            <input type="text" id="UF" class="form-control" maxlength="2"  required/>
+        </div>      
+</div>
+</div><!--Fim da segunda row-->
+
+<div class="row">
+    <div class="col sm-6 p-2">
+        <div class="form-group">
+            <label for="pais">País</label>
+            <input type="text" id="pais" class="form-control"  required/>
+    </div>
+    </div>
+    <div class="col sm-6 p-2">
+        <div class="form-group">
+          <label for="CEP">CEP</label>
+          <input type="text" name="" id="CEP" class="form-control" >
+          
+        </div>
+        </div>
+        </div><!--Fim da terceira row e da segunda box-->
+</div>
+<div class="borda">
+<div class="row">
+
+<div clas="col sm-12 p-2">
+    <div class="form-group">
+      <label for="desc">Digite uma descrição sobre você</label>
+      <input type="text" name="" id="desc" class="form-control" placeholder="Descrição">
+    </div>
+    </div>
+    <div class="col sm-12 p-2">
+        <div class="form-group">
+          <label for="foto">Carregue uma foto sua</label>
+          <input type="file" id="foto">
+          
+        </div>
+</div>
+</div>
+</div><!--FINALIZANDO-->
+
+
+<center>
+    <h4>Aceitar os termos da etec</h4>
+    <div class="select">
+        <label for="sim">Sim</label>
+        <input type="checkbox" id="sim" name="sim"/>
+        <label for="nao">Não</label>
+        <input type="checkbox" id="nao" name="nao"/>
+    </div>
+    <div class="botão">
+        <div>
+            <button class="btn-enviar" type="submit">Enviar</button>
+            <button class="btn-cancelar" type="cancel">Cancelar</button>
+     
+
+
+            
+            
+
+
+
+    
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/style.css">
+    <title>Parallax</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Trabalho</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="/Assets/img/stars.png" id="stars" alt=""> 
+        <img src="/Assets/img/moon.png" id="moon" alt="">
+        <h2 id="text">Pão com purê </h2>  
+        <a href="#sec" id="btn">Pão de alho</a>
+        <img src="/Assets/img/mountains_behind.png" id="montanhaT" alt="">
+        <img src="/Assets/img/mountains_front.png" id="montanhaF" alt="">
+
+    </section>
+    
+    <div class="sec" id="sec">
+    <h2>Parallax scroll effect</h2>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac ultrices lacus. Etiam eget consequat mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam mattis ligula vitae turpis lacinia, id lacinia tortor ullamcorper. Vestibulum lacinia fermentum viverra. Ut blandit lectus sem, et egestas turpis pellentesque sed. Praesent placerat pellentesque euismod. Curabitur gravida libero ac arcu placerat, vitae commodo magna elementum. Aenean viverra ipsum neque, sit amet gravida tellus laoreet scelerisque. Etiam quam elit, vestibulum non arcu eu, feugiat mattis odio. Maecenas felis diam, imperdiet nec lorem dignissim, egestas vulputate nunc. Vivamus tincidunt cursus cursus. In nec condimentum lorem. 
+        
+        Vestibulum dignissim ipsum vel purus tristique tincidunt. Nullam accumsan dolor ut risus mattis tincidunt. Integer interdum sem at sapien pulvinar, eu mattis nunc ultricies. Mauris luctus imperdiet ligula nec interdum. Etiam volutpat nisl in eros pretium bibendum. Maecenas euismod dolor non vestibulum porta. Nam iaculis elementum mi ut faucibus. Ut interdum urna a velit hendrerit, eget pretium risus maximus. Nulla lectus ante, rhoncus nec pharetra finibus, vulputate a purus. Fusce at justo porta, feugiat mi et, consectetur orci. Duis lacinia a est ut vulputate. Etiam aliquam magna quis dui viverra molestie. Quisque tincidunt orci eleifend urna ullamcorper dapibus. Nunc justo ante, ultrices nec feugiat non, sollicitudin at lectus. Vivamus tristique tellus eu tortor bibendum venenatis. Phasellus in malesuada magna.
+
+       id nisi a libero viverra tempus vitae nec sapien. Curabitur lectus mauris, interdum id libero sit amet, tristique gravida libero. Ut ut ligula et magna bibendum aliquam a vitae purus. Proin condimentum, erat quis interdum consectetur, sem nunc maximus augue, et vehicula justo orci ut metus. Sed nec tortor quis mi dictum pharetra. Aliquam a rhoncus mi. Aenean fringilla vestibulum massa, a euismod enim luctus ut. Morbi a condimentum ipsum, ut dignissim nulla. Praesent vel commodo augue, sodales pellentesque nisi.
+    </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let montanhaF = document.getElementById('montanhaF');
+        let montanhaT = document.getElementById('montanhaT');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+   stars.style.left = value * 0.25 + 'px';
+   moon.style.top = value * 1.05 + 'px';
+   montanhaT.style.top = value * 0.5 + 'px';
+   montanhaF.style.top = value * 0 + 'px';
+   text.style.marginRight = value * 4.0 + 'px';
+   text.style.marginTop = value * 1.5 + 'px';
+   btn.style.marginTop = value * 1.5 + 'px';
+   header.style.marginTop = value * 0.5 + 'px';
+})
+    </script>
+
+</body>
+</html>

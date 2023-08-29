@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Oswald&family=Ubuntu:ital@0;1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+    left: -6px;
+    width: 300px;
+    height: 379px;
+    transform: 0.3s ease-out;
+    box-shadow: 0 3px 15px  rgba(0,0,0,0.7);
+
+}
+.card .imgbox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
+.card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    background: #c57110;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.card:hover .content{
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
+
+}
+
+.content p{
+    margin: 10px 0 0;
+    padding: 1em 1em;
+    font-size: 13px;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    opacity: 0;
+}
+
+.card:hover .content p{
+    transform: translativeY(0);
+    opacity: 1;
+
+}
+h2{
+    text-align: center;
+}
